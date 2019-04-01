@@ -1,4 +1,3 @@
-<?php include('php/login.php') ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +32,7 @@
 					<button type="submit" class="btn" name="login_user">Zaloguj się</button>
 
 
-					<a class="signup" href="php/register_user.php">Zarejestruj się</a>
+					<a class="signup" href="register_view.php">Zarejestruj się</a>
 
 			</form>
 	</div>
