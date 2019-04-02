@@ -50,7 +50,7 @@
 
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are now logged in";
-			header('location: login_view.php');
+			header('location: ../gallery_view.php');
 			
 			$gallery_name = $_POST['folder_name']; 
 			mkdir ($gallery_name);
