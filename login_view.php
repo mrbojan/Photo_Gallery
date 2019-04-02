@@ -17,23 +17,23 @@
 	<div class="bg">
 		<div class="login">
 
-			<h2>Zaloguj się na konto</h2>
+			<h2>Log to your account</h2>
 
 			<form method="post" action="login_view.php">
 
 				<?php include('php/errors.php'); ?>
 
 
-					<input type="text" name="username" placeholder="nazwa użytkownika" >
+					<input type="text" name="username" placeholder="name user" >
 
 
-					<input type="password" name="password" placeholder="hasło">
+					<input type="password" name="password" placeholder="password">
 
 
-					<button type="submit" class="btn" name="login_user">Zaloguj się</button>
+					<button type="submit" class="btn" name="login_user">Log in</button>
 
 
-					<a class="signup" href="register_view.php">Zarejestruj się</a>
+					<a class="signup" href="register_view.php">Sign up</a>
 
 			</form>
 	</div>

@@ -18,27 +18,27 @@
 
 <nav class="navbar navbar-dark bg-dark navbar-expand-md" >
 
-		<a class="navbar-brand" href="index2.php"><img src="img/logo1.png" width="30" height="30" alt=""> Galeria</a>
+		<a class="navbar-brand" href="index2.php"><img src="css/img/logo1.png" width="30" height="30" alt=""> Gallery</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
 		aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
 		<span class="navbar-toggler-icon" display="none"></span>
 		</button>
 		
 		<div class="collapse navbar-collapse" id="mainmenu">
-		<form action="" method="post" enctype="multipart/form-data">
+		<form action="" method="post" enctype="multipart/form-data" >
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<input type="file" class="btn" name="files[]" multiple >
 				</li>
-				<li class="nav-item">
-					<input type="submit" class="btn" name="submit" value="Dodaj zdjęcia">
+				<li class="nav-item" >
+					<input type="submit" class="btn" name="submit" value="Add photos">
 				</li>
 				<li class="nav-item">
-					<input type="submit" class="btn" name="filtr" value="Filtruj zdjęcia">
+					<input type="submit" class="btn" name="filtr" value="Filtr photos">
 				</li>
 				
 				<li class="nav-item">
-					<input type="submit" class="btn" name="wyloguj" value="Wyloguj">
+					<input type="submit" class="btn" name="wyloguj" value="Log out">
 				</li>
 			</ul>
 		</form>
@@ -48,7 +48,7 @@
 </nav>
 		<header>
 		
-
+<?php include 'php/upload_photo.php'; ?>
 	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
