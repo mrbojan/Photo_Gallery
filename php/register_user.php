@@ -1,5 +1,15 @@
 <?php
-// REGISTER USER
+	// REGISTER USER
+	session_start();
+	include('dbConfig.php');	
+	// variable declaration
+	
+	$username = "";
+	$email    = "";
+	$errors = array(); 
+	$folder_name = "";
+	$_SESSION['success'] = "";
+	
 	if (isset($_POST['reg_user'])) :
 		// receive all input values from the form
 		$username = mysqli_real_escape_string($db, $_POST['username']);
@@ -42,7 +52,8 @@
 			$_SESSION['success'] = "You are now logged in";
 			header('location: login_view.php');
 			
-			mkdir($_POST['folder_name']);
+			$gallery_name = $_POST['folder_name']; 
+			mkdir ($gallery_name);
 
 		endif;
 
